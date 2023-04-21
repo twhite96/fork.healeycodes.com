@@ -16,7 +16,7 @@ export default function Nav() {
           <Link href="/projects" legacyBehavior>Projects</Link>
         </li>
         <li>
-          <Link href="/notes" legacyBehavior>Notes</Link>
+          <Link href="/shorts" legacyBehavior>Shorts</Link>
         </li>
         <li>
           <Link href="/about" legacyBehavior>About</Link>
@@ -31,10 +31,10 @@ export default function Nav() {
         </li>
         <li>
           <a
-            href={`https://twitter.com/${siteConfig.AUTHOR_TWITTER}`}
+            href={`https://${siteConfig.MASTODON_INSTANCE}/@${siteConfig.AUTHOR_MASTODON}`}
             target="_blank"
           >
-            Twitter
+            Mastodon
           </a>
         </li>
         <li>

@@ -1,12 +1,12 @@
 export default [
   {
-    name: "andoma",
-    link: "https://github.com/healeycodes/andoma",
-    desc: "A chess engine with alpha-beta pruning, piece-square tables, and move ordering.",
-    to: "/building-my-own-chess-engine",
+    name: "tw-links",
+    link: "https://github.com/twhite96/tw-links",
+    desc: "Just a simple link in bio site built with Astro. Why pay when you can create one for free?",
+    to: "https://links.tiffanywhite.dev/",
   },
   {
-    name: "nodots",
+    name: "",
     link: "https://github.com/healeycodes/nodots-lang",
     desc: "A small programming language without any dots.",
     to: "/adding-for-loops-to-an-interpreter",

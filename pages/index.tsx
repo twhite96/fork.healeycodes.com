@@ -10,7 +10,7 @@ import Newsletter from "../components/newsletter";
 
 import { getSortedPostsData, getPostData } from "../lib/posts";
 import { generateRssFeed } from "../lib/rss";
-import { getAllNotes } from "../lib/notes";
+import { getAllShorts } from "../lib/shorts";
 
 import { popularPosts } from "../data/posts";
 
@@ -25,7 +25,7 @@ export async function getStaticProps() {
     0
   ) +
   // Count notes
-  getAllNotes().reduce((count, current) => count + current.content.split(" ").length, 0)
+  getAllShorts().reduce((count, current) => count + current.content.split(" ").length, 0)
   return {
     props: {
       allPostsData,

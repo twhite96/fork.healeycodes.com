@@ -1,15 +1,17 @@
 {
   "SITE_LANG": "en",
-  "AUTHOR_NAME": "Andrew Healey",
-  "AUTHOR_EMAIL": "healeycodes@gmail.com",
-  "AUTHOR_TWITTER": "healeycodes",
-  "AUTHOR_GITHUB": "healeycodes",
-  "SITE_TITLE": "Andrew Healey's Blog",
-  "SITE_DESC": "Andrew Healey's blog and personal website. Software engineer, writer, creator.",
-  "SITE_URL": "https://healeycodes.com",
-  "REPO_URL": "https://github.com/healeycodes/healeycodes.com",
-  "EDIT_POST_URL": "https://github.com/healeycodes/healeycodes.com/tree/main/posts",
-  "BUTTON_DOWN_USER": "healeycodes",
+  "AUTHOR_NAME": "tiff",
+  "AUTHOR_EMAIL": "tiffany@tiffanywhite.dev",
+  "AUTHOR_MASTODON": "tiff",
+  "AUTHOR_GITHUB": "twhite96",
+  "SITE_TITLE": "Tiffany White's Blog",
+  "SITE_DESC": "Tiffany White's blog and personal website. Software engineer, writer, DevOps nerd.",
+  "SITE_URL": "https://tiffanywhite.dev",
+  "REPO_URL": "https://github.com/twhite96/fork.healeycodes.com",
+  "EDIT_POST_URL": "https://github.com/twhite96/fork.healeycodes.com/tree/main/posts",
+  "BUTTON_DOWN_USER": "tiffanywhite",
   "GOAT_COUNTER": "healeycodes",
-  "LAYOUT_WIDTH": 725
+  "LAYOUT_WIDTH": 725,
+  "AUTHOR_MASTODON:": "tiff",
+  "MASTODON_INSTANCE": "https://hachyderm.io"
 }

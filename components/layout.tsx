@@ -47,13 +47,14 @@ export default function Layout({ children, title, description }) {
         :root {
           --text: #1d1d27;
           --input-background: #fff;
-          --link: #0265d5;
-          --link-hover: #496495;
-          --light-text: #73738b;
-          --border: #b6b6c2;
+          --link: #0984ff;
+          --link-hover: #0265d5;
+          --light-text: #496495;
+          --border: #278bff;
           --button: #4a7ddd;
           --button-text: #fff;
           --aside: #d7d5ce;
+          --link-visited: #af52de;
         }
 
         html,
@@ -152,6 +153,7 @@ export default function Layout({ children, title, description }) {
           border-left-color: var(--border);
           border-left-style: solid;
           border-left-width: 2px;
+          box-shadow: 0px 10px 31px 0px rgba(0,0,0,0.1);
         }
 
         blockquote > p {
