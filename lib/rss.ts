@@ -13,7 +13,7 @@ export async function generateRssFeed() {
   const author = {
     name: siteConfig.AUTHOR_NAME,
     email: siteConfig.AUTHOR_EMAIL,
-    link: siteConfig.AUTHOR_TWITTER,
+    link: siteConfig.AUTHOR_MASTODON,
   };
 
   const feed = new Feed({
