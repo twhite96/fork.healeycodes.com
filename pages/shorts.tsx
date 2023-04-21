@@ -15,7 +15,7 @@ export async function getStaticProps() {
     };
 }
 
-export default function Shorts({ Shorts }: { Shorts: Short[] }) {
+export default function Shorts({ shorts }: { shorts: Short[] }) {
     const seo = { title: 'Shorts', description: 'Shorter writing.' };
 
     return (
@@ -25,10 +25,10 @@ export default function Shorts({ Shorts }: { Shorts: Short[] }) {
             </p>
             <main>
                 {
-                    Shorts
-                        .map((Short) => <div key={Short.id} id={Short.id.toString()} className="Short">
+                    shorts
+                        .map((short) => <div key={short.id} id={short.id.toString()} className="short">
                             <p>
-                                <a className="Short-date-link" href={`#${Short.id}`}>{(new Date(Short.id)).toDateString()}</a>
+                                <a className="short-date-link" href={`#${short.id}`}>{(new Date(short.id)).toDateString()}</a>
                             </p>
                             <Markdown
                                 options={{
@@ -40,21 +40,21 @@ export default function Shorts({ Shorts }: { Shorts: Short[] }) {
                                         return React.createElement(type, props, children);
                                     },
                                 }}
-                            >{Short.content}</Markdown>
-                            <Like id={`Short-${Short.id}`} />
+                            >{short.content}</Markdown>
+                            <Like id={`short-${short.id}`} />
                             <hr />
                         </div>)
                 }
             </main>
             <style jsx>{`
-            .Shorts-intro {
+            .short-intro {
                 padding-bottom: 24px;
             }
-            .Short-date-link {
+            .short-date-link {
                 color: var(--light-text);
                 margin-right: 20px;
             }
-            .Short-date-link:hover {
+            .short-date-link:hover {
                 color: var(--text);
             }
             `}</style>

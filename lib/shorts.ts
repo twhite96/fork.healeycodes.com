@@ -11,7 +11,7 @@ export type Short = {
 
 export function getAllShorts(): Short[] {
     const fileNames = fs.readdirSync(SHORTS_DIRECTORY)
-    const Shorts: Short[] = []
+    const shorts: Short[] = []
 
     fileNames.forEach((fileName) => {
         const id = parseInt(fileName.split('.md')[0], 10)
@@ -25,12 +25,12 @@ export function getAllShorts(): Short[] {
         const fullPath = path.join(SHORTS_DIRECTORY, `${id}.md`);
         const fileContents = fs.readFileSync(fullPath, "utf8");
         const matterResult = matter(fileContents)
-        Shorts.push({
+        shorts.push({
             id: id,
             content: matterResult.content
         })
     })
 
-    Shorts.sort((a, z) => z.id - a.id)
-    return Shorts
+    shorts.sort((a, z) => z.id - a.id)
+    return shorts
 }
